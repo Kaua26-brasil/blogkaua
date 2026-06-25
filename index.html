@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏀 The Hoop District | Cultura do Basquete</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">🏀 The Hoop District</div>
+            <ul class="menu-items">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">NBA</a></li>
+                <li><a href="#">NBB</a></li>
+                <li><a href="#">Cultura</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="banner">
+        <h1>THE HOOP DISTRICT</h1>
+        <p>A cultura do basquete de rua, análises de tênis e tabelas ao vivo</p>
+    </header>
+
+    <div class="grid-layout">
+        
+        <main class="feed-section">
+            
+            <article class="post-card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=800&q=80" alt="Mão segurando bola" class="post-thumbnail">
+                <div class="post-body">
+                    <span class="badge">👟 Cultura</span>
+                    <h2 class="post-title">A Evolução dos Tênis de Basquete: Das Quadras para o Streetwear</h2>
+                    <p class="meta-data">Por <strong>@StaffHoop</strong> • Há 2 horas</p>
+                    <p class="post-text">Os tênis de basquete deixaram de ser apenas equipamentos esportivos para se tornarem os maiores ícones da moda urbana global. Tecnologias de amortecimento a vácuo, placas de carbono e designs ousados ditam o ritmo das ruas. Qual o seu modelo favorito?</p>
+                    
+                    <div class="action-row">
+                        <button class="action-btn" onclick="likePost(this, 124)">
+                            <i class="fa-solid fa-thumbs-up"></i> <span class="counter">124</span>
+                        </button>
+                        <button class="action-btn" onclick="dislikePost(this, 3)">
+                            <i class="fa-solid fa-thumbs-down"></i> <span class="counter">3</span>
+                        </button>
+                        <button class="action-btn share-btn" onclick="shareUrl('A Evolução dos Tênis')">
+                            <i class="fa-solid fa-share-nodes"></i> Compartilhar
+                        </button>
+                    </div>
+
+                    <div class="box-comments">
+                        <h3>💬 Resenha da Quadra</h3>
+                        <div class="input-group">
+                            <input type="text" placeholder="Adicione seu comentário...">
+                            <button onclick="publishComment(this)">Enviar</button>
+                        </div>
+                        <ul class="list-comments">
+                            <li><strong>@JordanFan:</strong> O Air Jordan 11 mudou o mundo do esporte pra sempre! 🔥</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <img src="https://images.unsplash.com/photo-1519766304817-4f37bda74a27?auto=format&fit=crop&w=800&q=80" alt="Treino" class="post-thumbnail">
+                <div class="post-body">
+                    <span class="badge">⚡ Treino</span>
+                    <h2 class="post-title">Como Melhorar o seu Arremesso de 3 Pontos: Guia Técnico</h2>
+                    <p class="meta-data">Por <strong>@CoachSilva</strong> • Há 5 horas</p>
+                    <p class="post-text">Garantir consistência na linha dos três pontos exige mais do que repetição. O segredo está no alinhamento da base, na mecânica de rotação do pulso ("quebra da asa") e no equilíbrio do salto. Separamos os melhores treinos para você.</p>
+                    
+                    <div class="action-row">
+                        <button class="action-btn" onclick="likePost(this, 98)">
+                            <i class="fa-solid fa-thumbs-up"></i> <span class="counter">98</span>
+                        </button>
+                        <button class="action-btn" onclick="dislikePost(this, 1)">
+                            <i class="fa-solid fa-thumbs-down"></i> <span class="counter">1</span>
+                        </button>
+                        <button class="action-btn share-btn" onclick="shareUrl('Guia Técnico de Arremesso')">
+                            <i class="fa-solid fa-share-nodes"></i> Compartilhar
+                        </button>
+                    </div>
+
+                    <div class="box-comments">
+                        <h3>💬 Resenha da Quadra</h3>
+                        <div class="input-group">
+                            <input type="text" placeholder="Adicione seu comentário...">
+                            <button onclick="publishComment(this)">Enviar</button>
+                        </div>
+                        <ul class="list-comments">
+                            <li><strong>@CrossoverKing:</strong> Meu cotovelo sempre abria no arremesso, as dicas ajudaram muito! 🙌</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <aside class="sidebar-panel">
+            <div class="sidebar-box">
+                <h3>📅 Próximos Jogos</h3>
+                <div class="schedule-row">
+                    <span>Lakers 🟡 vs 🟢 Celtics</span>
+                    <span class="schedule-time">Hoje 21:30</span>
+                </div>
+                <div class="schedule-row">
+                    <span>Warriors 🔵 vs 🔴 Bulls</span>
+                    <span class="schedule-time">Amanhã 23:00</span>
+                </div>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>📊 Classificação</h3>
+                <table class="table-stats">
+                    <thead>
+                        <tr><th>Pos</th><th>Time</th><th>V/D</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1º</td><td>Celtics</td><td>45 - 12</td></tr>
+                        <tr><td>2º</td><td>Bucks</td><td>41 - 16</td></tr>
+                        <tr><td>3º</td><td>Lakers</td><td>39 - 18</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="sidebar-box">
+                <h3>📩 Newsletter</h3>
+                <input type="email" class="newsletter-input" placeholder="Seu e-mail da NBA">
+                <button class="newsletter-btn" onclick="alert('Inscrito no boletim do garrafão! 🏀')">Entrar na Lista</button>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>© 2026 The Hoop District Portal. Feito para os amantes do jogo. 🏀</p>
+    </footer>
+
+    <script>
+        function likePost(btn, startValue) {
+            const row = btn.parentElement;
+            const dislikeBtn = row.querySelector('.fa-thumbs-down').parentElement;
+            const likeSpan = btn.querySelector('.counter');
+            
+            if (btn.classList.contains('active-like')) {
+                btn.classList.remove('active-like');
+                likeSpan.innerText = startValue;
+            } else {
+                btn.classList.add('active-like');
+                likeSpan.innerText = startValue + 1;
+                
+                if (dislikeBtn.classList.contains('active-dislike')) {
+                    dislikeBtn.classList.remove('active-dislike');
+                    const txt = dislikeBtn.querySelector('.counter');
+                    txt.innerText = parseInt(txt.innerText) - 1;
+                }
+            }
+        }
+
+        function dislikePost(btn, startValue) {
+            const row = btn.parentElement;
+            const likeBtn = row.querySelector('.fa-thumbs-up').parentElement;
+            const dislikeSpan = btn.querySelector('.counter');
+
+            if (btn.classList.contains('active-dislike')) {
+                btn.classList.remove('active-dislike');
+                dislikeSpan.innerText = startValue;
+            } else {
+                btn.classList.add('active-dislike');
+                dislikeSpan.innerText = startValue + 1;
+
+                if (likeBtn.classList.contains('active-like')) {
+                    likeBtn.classList.remove('active-like');
+                    const txt = likeBtn.querySelector('.counter');
+                    txt.innerText = parseInt(txt.innerText) - 1;
+                }
+            }
+        }
+
+        function shareUrl(title) {
+            if (navigator.share) {
+                navigator.share({ title: title, url: window.location.href }).catch(console.error);
+            } else {
+                navigator.clipboard.writeText(window.location.href);
+                alert(`🔗 Link copiado para: "${title}"`);
+            }
+        }
+
+        function publishComment(btn) {
+            const input = btn.parentElement.querySelector('input');
+            const txt = input.value.trim();
+            if (txt !== "") {
+                const ul = btn.closest('.box-comments').querySelector('.list-comments');
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>@Você:</strong> ${txt}`;
+                ul.appendChild(li);
+                input.value = "";
+            } else {
+                alert("Escreva uma mensagem antes de enviar!");
+            }
+        }
+    </script>
+</body>
+</html>
